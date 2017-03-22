@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><ads:body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ads="http://www.ads.org/AnimalDataSchema">
+ <ads:header>
+  <ads:createdBy>Polaris</ads:createdBy>
+  <ads:dateTimeCreated>2017-01-11T21:33:38Z</ads:dateTimeCreated>
+ </ads:header>
+ <ads:animals count="10">
+  <ads:animal>
+   <ads:internalIdentifier>1</ads:internalIdentifier>
+   <ads:eid>982 123522163239</ads:eid>
+   <ads:sex>Female</ads:sex>
+   <ads:dob>2017-01-09</ads:dob>
+   <ads:breed>Angus</ads:breed>
+   <ads:customLifeTimeData>
+    <ads:name>VID</ads:name>
+    <ads:value>PY001</ads:value>
+   </ads:customLifeTimeData>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>2</ads:internalIdentifier>
+   <ads:eid>982 123522163243</ads:eid>
+   <ads:sex>Female</ads:sex>
+   <ads:dob>2017-01-09</ads:dob>
+   <ads:breed>Angus</ads:breed>
+   <ads:customLifeTimeData>
+    <ads:name>VID</ads:name>
+    <ads:value>PY002</ads:value>
+   </ads:customLifeTimeData>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>5</ads:internalIdentifier>
+   <ads:eid>982 123522163247</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>6</ads:internalIdentifier>
+   <ads:eid>982 123522163248</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>7</ads:internalIdentifier>
+   <ads:eid>982 123522163250</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>8</ads:internalIdentifier>
+   <ads:eid>982 123522163251</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>9</ads:internalIdentifier>
+   <ads:eid>982 123522163253</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>10</ads:internalIdentifier>
+   <ads:eid>982 123522163254</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>11</ads:internalIdentifier>
+   <ads:eid>982 123522163259</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+  <ads:animal>
+   <ads:internalIdentifier>12</ads:internalIdentifier>
+   <ads:eid>982 123522163259</ads:eid>
+   <ads:dob>2015-01-27</ads:dob>
+  </ads:animal>
+ </ads:animals>
+</ads:body>

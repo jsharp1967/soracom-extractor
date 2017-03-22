@@ -1,0 +1,102 @@
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+#include "xr5000.h"
+#include "functions.h"
+#include "messages.h"
+
+#include <wiringPi.h> // Include WiringPi library!
+const int butUp = 17;  //Active-low button - Broadcom pin 17, P1 pin 11
+const int butYellow = 18; //Active-low button - Broadcom pin 18, P1 pin 12
+const int butOrange = 27; //Active-low button - Broadcom pin 27, P1 pin 13
+const int butRed = 22;    //Active-low button - Broadcom pin 22, P1 pin 15
+
+
+
+int main(int argc, char *argv[])
+{
+	cout<<"Welcome to soracom command programme"<<endl;
+	Messages::Instance()->sendSoracomOnline();
+	Messages::Instance()->sendIP(getIP());
+	
+	displayBaseMenuOptions();
+	string input = "";
+	while (true)
+	{
+		cout<<"Enter soracom Command:"<<endl;
+		getline(cin,input);
+		
+		if (input == "q")
+		{	
+			cout<<"Quitting...."<<endl;
+			break;
+		}
+		else if (input == "x")
+		{
+			cout<<"Execute Command"<<endl;
+			string com = ".com/";
+			string command = "http://example" + com;
+			//execute_command(command);
+			continue;
+		}
+		else if (input == "s")
+		{
+			cout<<"Getting XR5000 Status"<<endl;
+			get_status();
+			continue;
+		}
+		else if (input == "n")
+		{
+			cout<<"Getting XR5000 Sessions"<<endl;
+			get_sessionsP();
+			continue;
+		}
+		else if (input == "a")
+		{
+			cout<<"Getting XR5000 Animals"<<endl;
+			get_animals();
+			continue;
+		}
+		else if (input == "b")
+		{
+			cout<<"Getting XR5000 Animals"<<endl;
+			get_animalsInSession();
+			continue;
+		}
+		else if (input =="u")
+		{
+			cout<<"Uploading files"<<endl;
+			upload_files();
+			continue;
+		}
+		else if (input =="v")
+		{
+			cout<<"Uploading compressed files"<<endl;
+			upload_compressed_files();
+			continue;
+		}
+		else if (input == "c")
+		{
+			cout<<"Compressing files"<<endl;
+			compress_files();
+			continue;
+		}
+		else if (input == "d")
+		{
+			cout<<"Decompressing files"<<endl;
+			decompress_files();
+			continue;
+		}
+		else if (input == "p")
+                {
+                        cout<<"Processing and Parsing Animal files"<<endl;
+                        processAnimalFiles();
+                        continue;
+                }
+		displayBaseMenuOptions();
+	}
+
+	Messages::Instance()->sendSoracomOffline();
+    	return 0;
+}

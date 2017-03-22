@@ -1,0 +1,25 @@
+
+//void execute_command(string c);
+void upload_data();
+void get_status();
+void get_sessions();
+bool get_sessionsP();
+void get_animals();
+void get_animalsInSession();
+void displayBaseMenuOptions();
+void upload_files();
+void compress_files();
+void decompress_files();
+bool upload_compressed_files();
+void processAnimalFiles();
+string getIP();
+void upload_marker_file();
+void commandLineDriver();
+void buttonDriver();
+void displayFileList();
+bool checkIsZipped(string fileName);
+bool findFiles();
+void download_animals();
+void backup_files();
+string getTimeNow();
+string getDCUName();
