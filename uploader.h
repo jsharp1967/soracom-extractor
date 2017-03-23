@@ -18,7 +18,7 @@
 //#define REMOTE_URL      "FTP://192.168.0.71/" UPLOAD_FILE_AS
 //#define RENAME_FILE_TO  "sent.txt"
 //#define userpass "pi:raspberry"
-#define userpass "jsharp:Soracom1234567890"
+
 
 using namespace std;
 
